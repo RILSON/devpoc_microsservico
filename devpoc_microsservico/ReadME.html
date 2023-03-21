@@ -1,0 +1,33 @@
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=5,IE=9" ><![endif]-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>ReadME</title>
+<meta charset="utf-8"/>
+</head>
+<body>
+<h3>ReadME</h3>
+<p>Arquitetura do serviço desenvolvido em Java com Spring Boot</p>
+
+<p>Foram criados 3 módulos:</p>
+
+<h4>Core</h4>
+<p>Estrutura compartilhada entre os projetos. As classes de modelo, serviço e repositório foram mantidas nesse módulo
+    para servir como ponto de acesso compartilhado entre os outros 2 microsserviços.</p>
+
+<h4>Venda</h4>
+<p>Microsserviço principal de gestão de venda, possui Controller com funcionalidades principais.</p>
+
+<h4>Relatório</h4>
+<p>Microsserviço com o propósito de prover ponto de consulta a dados e relatórios, assim como vendas consolidadas de
+    de um período.</p>
+
+<h3>Base de dados</h3>
+<p>O projeto roda em cima de uma estrutura do docker. Para utilizar deve-se rodar o arquivo stack.yml em ../venda </p>
+<p>docker-compose -f venda/stack.yml</p>
+<p>Após a execução do arquivo deve-se criar o schema conforme arquivo ../resoures/application.yml</p>
+
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile modified=\&quot;2023-03-21T03:01:02.077Z\&quot; host=\&quot;app.diagrams.net\&quot; agent=\&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36\&quot; etag=\&quot;_-VnfWpofaYOT2uUvRTx\&quot; version=\&quot;20.8.23\&quot; type=\&quot;device\&quot;&gt;&lt;diagram id=\&quot;Ht1M8jgEwFfnCIfOTk4-\&quot; name=\&quot;Page-1\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}"></div>
+<script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
+</body>
+</html>
